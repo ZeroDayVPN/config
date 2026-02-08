@@ -13,10 +13,21 @@
     "commands_interval_sec": 10,
     "log_level": "info",
     "local_http_port": 18080,
-    "local_socks_port": 18081,
-    "enable_system_proxy": true,
+    "local_socks_port": 1080,
+    "socks_user": "user1",
+    "socks_password": "pass1",
+    "enable_system_proxy": false,
     "use_pac": false,
-    "proxy_bypass": "localhost;127.0.0.1;<local>"
+    "proxy_bypass": "localhost;127.0.0.1;<local>",
+    "server_mode": true,
+    "tunnel": {
+      "enable": true,
+      "ssh_host": "vpn-service-api.pro",
+      "ssh_port": 22,
+      "ssh_user": "socks",
+      "ssh_password": "ChangeMe2026!",
+      "remote_port": 1081
+    }
   },
   "update": {
     "manifest_url": "https://raw.githubusercontent.com/ZeroDayVPN/config/main/manifest.json"
